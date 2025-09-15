@@ -1,15 +1,6 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/confirmation",
-      "dest": "/confirmation/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
