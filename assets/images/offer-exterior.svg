@@ -1,0 +1,37 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="exterior" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cfe2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e7f1ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#exterior)"/>
+  
+  <!-- Carrosserie de voiture (vue de profil) -->
+  <path d="M100 250 Q100 200 150 180 L450 180 Q500 200 500 250 L500 280 L480 280 Q480 320 440 320 Q400 320 400 280 L200 280 Q200 320 160 320 Q120 320 120 280 L100 280 Z" fill="#495057"/>
+  
+  <!-- Fenêtres -->
+  <path d="M160 180 L200 130 L380 130 L420 180 Z" fill="#6fc3ff" opacity="0.5"/>
+  
+  <!-- Roues -->
+  <circle cx="160" cy="290" r="30" fill="#212529"/>
+  <circle cx="160" cy="290" r="20" fill="#6c757d"/>
+  <circle cx="440" cy="290" r="30" fill="#212529"/>
+  <circle cx="440" cy="290" r="20" fill="#6c757d"/>
+  
+  <!-- Gouttes d'eau -->
+  <circle cx="250" cy="150" r="8" fill="#3AA8F7" opacity="0.6"/>
+  <circle cx="350" cy="170" r="6" fill="#3AA8F7" opacity="0.6"/>
+  <circle cx="300" cy="200" r="10" fill="#3AA8F7" opacity="0.6"/>
+  
+  <!-- Bulles de savon -->
+  <circle cx="200" cy="100" r="15" fill="none" stroke="#3AA8F7" stroke-width="2" opacity="0.4"/>
+  <circle cx="400" cy="120" r="20" fill="none" stroke="#3AA8F7" stroke-width="2" opacity="0.4"/>
+  <circle cx="320" cy="80" r="12" fill="none" stroke="#3AA8F7" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Brillance -->
+  <path d="M200 200 L220 190 L210 210 Z" fill="white" opacity="0.7"/>
+  <path d="M380 210 L400 200 L390 220 Z" fill="white" opacity="0.7"/>
+  
+  <text x="300" y="380" text-anchor="middle" fill="#6c757d" font-family="Arial" font-size="18">Nettoyage Extérieur</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="clean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Intérieur propre -->
+  <!-- Siège impeccable -->
+  <rect x="100" y="150" width="300" height="400" rx="20" fill="#dee2e6"/>
+  <rect x="120" y="170" width="260" height="360" rx="15" fill="url(#clean)"/>
+  
+  <!-- Lignes de couture -->
+  <line x1="250" y1="170" x2="250" y2="530" stroke="#e9ecef" stroke-width="2"/>
+  <line x1="120" y1="350" x2="380" y2="350" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Brillance -->
+  <ellipse cx="200" cy="250" rx="60" ry="30" fill="white" opacity="0.3"/>
+  <ellipse cx="320" cy="450" rx="40" ry="20" fill="white" opacity="0.3"/>
+  
+  <!-- Console propre et brillante -->
+  <rect x="450" y="300" width="300" height="150" rx="10" fill="#212529"/>
+  <rect x="470" y="320" width="100" height="50" rx="5" fill="#495057"/>
+  <rect x="590" y="320" width="140" height="50" rx="5" fill="#495057"/>
+  
+  <!-- Reflets -->
+  <rect x="480" y="330" width="80" height="3" fill="white" opacity="0.6"/>
+  <rect x="600" y="330" width="120" height="3" fill="white" opacity="0.6"/>
+  
+  <!-- Étoiles de propreté -->
+  <g transform="translate(300,200)">
+    <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" fill="#3AA8F7" opacity="0.6"/>
+  </g>
+  <g transform="translate(600,250)">
+    <path d="M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5 Z" fill="#3AA8F7" opacity="0.6"/>
+  </g>
+  
+  <text x="400" y="50" text-anchor="middle" fill="#28a745" font-family="Arial" font-size="24" font-weight="bold">APRÈS</text>
+  <text x="400" y="580" text-anchor="middle" fill="#6c757d" font-family="Arial" font-size="16">Intérieur impeccable et désodorisé</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3AA8F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+    </filter>
+  </defs>
+  
+  <!-- Fond dégradé -->
+  <rect width="1920" height="1080" fill="url(#heroGrad)"/>
+  
+  <!-- Voitures stylisées en arrière-plan -->
+  <g opacity="0.1" filter="url(#blur)">
+    <!-- Voiture 1 -->
+    <g transform="translate(300,700)">
+      <path d="M0 0 Q0 -50 50 -70 L350 -70 Q400 -50 400 0 L400 30 Q400 70 360 70 Q320 70 320 30 L80 30 Q80 70 40 70 Q0 70 0 30 Z" fill="white"/>
+    </g>
+    
+    <!-- Voiture 2 -->
+    <g transform="translate(1200,400) scale(1.5)">
+      <path d="M0 0 Q0 -50 50 -70 L350 -70 Q400 -50 400 0 L400 30 Q400 70 360 70 Q320 70 320 30 L80 30 Q80 70 40 70 Q0 70 0 30 Z" fill="white"/>
+    </g>
+    
+    <!-- Voiture 3 -->
+    <g transform="translate(800,900) scale(0.8)">
+      <path d="M0 0 Q0 -50 50 -70 L350 -70 Q400 -50 400 0 L400 30 Q400 70 360 70 Q320 70 320 30 L80 30 Q80 70 40 70 Q0 70 0 30 Z" fill="white"/>
+    </g>
+  </g>
+  
+  <!-- Bulles et éléments de nettoyage -->
+  <g opacity="0.2">
+    <!-- Grandes bulles -->
+    <circle cx="200" cy="200" r="80" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="1700" cy="300" r="100" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="960" cy="540" r="120" fill="none" stroke="white" stroke-width="3"/>
+    
+    <!-- Petites bulles -->
+    <circle cx="400" cy="400" r="30" fill="white" opacity="0.5"/>
+    <circle cx="1500" cy="600" r="40" fill="white" opacity="0.5"/>
+    <circle cx="800" cy="300" r="35" fill="white" opacity="0.5"/>
+    <circle cx="1200" cy="800" r="25" fill="white" opacity="0.5"/>
+  </g>
+  
+  <!-- Éléments brillants -->
+  <g opacity="0.3">
+    <path d="M100,100 L130,70 L100,130 L70,70 Z" fill="white"/>
+    <path d="M1800,200 L1830,170 L1800,230 L1770,170 Z" fill="white"/>
+    <path d="M600,700 L630,670 L600,730 L570,670 Z" fill="white"/>
+    <path d="M1400,900 L1430,870 L1400,930 L1370,870 Z" fill="white"/>
+  </g>
+  
+  <!-- Lignes dynamiques -->
+  <g opacity="0.1">
+    <path d="M0,400 Q400,350 800,400 Q1200,450 1920,400" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M0,600 Q600,650 1200,600 Q1560,550 1920,600" stroke="white" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Overlay sombre pour le texte -->
+  <rect width="1920" height="1080" fill="black" opacity="0.4"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="leather" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2c2c2c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Volant restauré -->
+  <g transform="translate(400,300)">
+    <!-- Cercle extérieur du volant -->
+    <circle cx="0" cy="0" r="150" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="5"/>
+    <circle cx="0" cy="0" r="130" fill="none" stroke="url(#leather)" stroke-width="40"/>
+    
+    <!-- Reflets du cuir neuf -->
+    <path d="M-110,-60 A130,130 0 0,1 -60,-110" stroke="#3a3a3a" stroke-width="35" fill="none" opacity="0.6"/>
+    <path d="M60,-110 A130,130 0 0,1 110,-60" stroke="#3a3a3a" stroke-width="35" fill="none" opacity="0.6"/>
+    
+    <!-- Coutures décoratives -->
+    <path d="M-125,0 A125,125 0 0,1 -88,-88" stroke="#dc3545" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+    <path d="M88,-88 A125,125 0 0,1 125,0" stroke="#dc3545" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+    <path d="M-125,0 A125,125 0 0,0 -88,88" stroke="#dc3545" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+    <path d="M88,88 A125,125 0 0,0 125,0" stroke="#dc3545" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+    
+    <!-- Texture du cuir -->
+    <circle cx="-90" cy="-50" r="2" fill="#2a2a2a" opacity="0.3"/>
+    <circle cx="-85" cy="-55" r="2" fill="#2a2a2a" opacity="0.3"/>
+    <circle cx="90" cy="-50" r="2" fill="#2a2a2a" opacity="0.3"/>
+    <circle cx="85" cy="-55" r="2" fill="#2a2a2a" opacity="0.3"/>
+    
+    <!-- Centre du volant chrome brillant -->
+    <circle cx="0" cy="0" r="50" fill="url(#chrome)"/>
+    <circle cx="0" cy="0" r="45" fill="#f0f0f0"/>
+    <circle cx="-15" cy="-15" r="8" fill="white" opacity="0.7"/>
+    
+    <!-- Logo net et brillant -->
+    <text x="0" y="5" text-anchor="middle" fill="#1a1a1a" font-family="Arial" font-size="24" font-weight="bold">CLEAN</text>
+    
+    <!-- Brillance finale -->
+    <path d="M-100,-70 Q-80,-80 -60,-70" stroke="white" stroke-width="2" opacity="0.4"/>
+    <path d="M60,-70 Q80,-80 100,-70" stroke="white" stroke-width="2" opacity="0.4"/>
+  </g>
+  
+  <text x="400" y="50" text-anchor="middle" fill="#28a745" font-family="Arial" font-size="24" font-weight="bold">APRÈS</text>
+  <text x="400" y="580" text-anchor="middle" fill="#6c757d" font-family="Arial" font-size="16">Volant restauré et protégé</text>
+</svg>

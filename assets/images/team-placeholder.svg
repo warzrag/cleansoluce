@@ -1,0 +1,6 @@
+<svg width=\"300\" height=\"400\" xmlns=\"http://www.w3.org/2000/svg\">
+  <rect width=\"100%\" height=\"100%\" fill=\"#f8f9fa\"/>
+  <circle cx=\"150\" cy=\"120\" r=\"60\" fill=\"#dee2e6\"/>
+  <ellipse cx=\"150\" cy=\"280\" rx=\"100\" ry=\"80\" fill=\"#dee2e6\"/>
+  <text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" fill=\"#adb5bd\" font-family=\"Arial\" font-size=\"18\">Team Photo</text>
+</svg>

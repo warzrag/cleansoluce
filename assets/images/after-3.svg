@@ -1,0 +1,47 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Phare restauré -->
+  <g transform="translate(400,300)">
+    <!-- Contour du phare -->
+    <ellipse cx="0" cy="0" rx="180" ry="120" fill="#1a1a1a"/>
+    <ellipse cx="0" cy="0" rx="170" ry="110" fill="#2c2c2c"/>
+    
+    <!-- Surface cristal claire -->
+    <ellipse cx="0" cy="0" rx="160" ry="100" fill="#f0f8ff" opacity="0.95"/>
+    <ellipse cx="0" cy="0" rx="155" ry="95" fill="url(#light)"/>
+    
+    <!-- Reflets brillants -->
+    <ellipse cx="-40" cy="-40" rx="60" ry="30" fill="white" opacity="0.7" transform="rotate(-30 -40 -40)"/>
+    <ellipse cx="50" cy="-30" rx="40" ry="20" fill="white" opacity="0.5" transform="rotate(20 50 -30)"/>
+    
+    <!-- Ampoule visible et brillante -->
+    <circle cx="0" cy="0" r="35" fill="#ffd700"/>
+    <circle cx="0" cy="0" r="30" fill="#ffed4e"/>
+    <circle cx="-8" cy="-8" r="10" fill="white" opacity="0.8"/>
+    
+    <!-- Rayons de lumière -->
+    <path d="M0,0 L-140,-80" stroke="#ffd700" stroke-width="3" opacity="0.3"/>
+    <path d="M0,0 L140,-80" stroke="#ffd700" stroke-width="3" opacity="0.3"/>
+    <path d="M0,0 L-140,80" stroke="#ffd700" stroke-width="3" opacity="0.3"/>
+    <path d="M0,0 L140,80" stroke="#ffd700" stroke-width="3" opacity="0.3"/>
+    <path d="M0,0 L0,-100" stroke="#ffd700" stroke-width="4" opacity="0.4"/>
+    
+    <!-- Éclats de brillance -->
+    <g transform="translate(-100,-60)">
+      <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" fill="white" opacity="0.9"/>
+    </g>
+    <g transform="translate(90,-50)">
+      <path d="M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5 Z" fill="white" opacity="0.9"/>
+    </g>
+  </g>
+  
+  <text x="400" y="50" text-anchor="middle" fill="#28a745" font-family="Arial" font-size="24" font-weight="bold">APRÈS</text>
+  <text x="400" y="580" text-anchor="middle" fill="#6c757d" font-family="Arial" font-size="16">Phares cristal, visibilité optimale</text>
+</svg>

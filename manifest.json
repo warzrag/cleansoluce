@@ -1,0 +1,21 @@
+{
+  "name": "CleanSoluce - Nettoyage Auto à Domicile",
+  "short_name": "CleanSoluce",
+  "description": "Service de nettoyage automobile professionnel à domicile dans le Territoire de Belfort",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3AA8F7",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

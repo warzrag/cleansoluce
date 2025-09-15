@@ -1,0 +1,14 @@
+# Robots.txt pour CleanSoluce
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cleansoluce.fr/sitemap.xml
+
+# Bloque l'accès aux fichiers sensibles
+Disallow: /api/
+Disallow: *.sql
+Disallow: *.log
+
+# Délais entre les requêtes (en secondes)
+Crawl-delay: 1

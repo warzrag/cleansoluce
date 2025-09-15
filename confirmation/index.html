@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de réservation - CleanSoluce</title>
+    <meta name="description" content="Votre réservation a été confirmée. Merci de faire confiance à CleanSoluce pour le nettoyage de votre véhicule.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/confirmation.css">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header simple -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">Clean<span class="logo-highlight">Soluce</span></span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section de confirmation -->
+    <section class="confirmation-section">
+        <div class="container">
+            <div class="confirmation-wrapper">
+                <!-- Animation de succès -->
+                <div class="success-animation">
+                    <div class="success-circle">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                
+                <!-- Message de confirmation -->
+                <div class="confirmation-content">
+                    <h1 class="confirmation-title">✅ Réservation confirmée !</h1>
+                    <p class="confirmation-subtitle">
+                        Votre demande de nettoyage a bien été enregistrée.
+                    </p>
+                    
+                    <!-- Message principal -->
+                    <div class="main-message">
+                        <p>Notre équipe CleanSoluce va vous contacter <strong>très rapidement par téléphone</strong> afin de confirmer ensemble votre prestation.</p>
+                        
+                        <div class="phone-alert">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <p>L'appel sera effectué depuis ce numéro :</p>
+                                <h2>07 81 47 99 18</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Instructions importantes -->
+                    <div class="important-instructions">
+                        <div class="instruction-item">
+                            <i class="fas fa-hand-point-right"></i>
+                            <p><strong>Merci de répondre à notre appel</strong> lorsque vous voyez ce numéro s'afficher.</p>
+                        </div>
+                        
+                        <div class="instruction-item">
+                            <i class="fas fa-hand-point-right"></i>
+                            <p>Si vous n'êtes pas disponible, <strong>merci de nous rappeler dès que possible</strong> afin que nous puissions :</p>
+                        </div>
+                        
+                        <ul class="confirmation-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confirmer l'adresse d'intervention</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Vérifier la formule choisie</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expliquer le déroulement de la prestation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Message de clôture -->
+                    <div class="closing-message">
+                        <p>Nous avons hâte de redonner éclat et fraîcheur à votre véhicule 🚘✨</p>
+                        <p class="signature">À très bientôt,<br><strong>L'équipe CleanSoluce</strong></p>
+                    </div>
+                    
+                    <!-- Actions -->
+                    <div class="confirmation-actions">
+                        <a href="../index.html" class="btn btn-primary">
+                            <i class="fas fa-home"></i>
+                            Retour à l'accueil
+                        </a>
+                        <a href="../index.html#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            Nous contacter
+                        </a>
+                    </div>
+                    
+                    <!-- Réseaux sociaux -->
+                    <div class="social-follow">
+                        <p>Suivez-nous sur nos réseaux</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/clean.soluce/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61557806675559" target="_blank" rel="noopener" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@clean.soluce" target="_blank" rel="noopener" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer simple -->
+    <footer class="footer-simple">
+        <div class="container">
+            <p>&copy; 2024 CleanSoluce. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Animation de l'icône de succès au chargement
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.success-circle').classList.add('animate');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
