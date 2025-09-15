@@ -3584,24 +3584,24 @@ video.hero-video {
 
 .expertise-card {
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
-    padding: 20px 20px;
-    border-radius: 20px;
+    padding: 15px 15px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     border: 1px solid rgba(58, 168, 247, 0.1);
 }
 
 .expertise-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(58, 168, 247, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(58, 168, 247, 0.15);
     border-color: var(--primary);
 }
 
 .expertise-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 8px;
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     border-radius: 50%;
     display: flex;
@@ -3623,20 +3623,20 @@ video.hero-video {
 }
 
 .expertise-icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     z-index: 1;
 }
 
 .expertise-card h4 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
     color: var(--text-color);
 }
 
 .expertise-card p {
     color: var(--text-muted);
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: 1.4;
+    font-size: 0.9rem;
     margin: 0;
 }
