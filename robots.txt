@@ -1,14 +1,14 @@
 # Robots.txt pour CleanSoluce
+# Ce fichier indique aux moteurs de recherche quelles pages indexer
+
 User-agent: *
 Allow: /
+Allow: /assets/
+Disallow: /assets/js/
+Disallow: *.pdf
 
 # Sitemap
 Sitemap: https://cleansoluce.fr/sitemap.xml
 
-# Bloque l'accès aux fichiers sensibles
-Disallow: /api/
-Disallow: *.sql
-Disallow: *.log
-
-# Délais entre les requêtes (en secondes)
+# Crawl-delay pour éviter la surcharge
 Crawl-delay: 1
