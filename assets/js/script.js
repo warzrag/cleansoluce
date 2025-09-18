@@ -550,12 +550,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 const statNumbers = entry.target.querySelectorAll('.stat-number');
                 
                 statNumbers.forEach(stat => {
-                    const target = parseFloat(stat.getAttribute('data-count'));
+                    const targetAttr = stat.getAttribute('data-count');
+
+                    // Si pas d'attribut data-count ou si c'est NaN, utiliser le texte existant
+                    if (!targetAttr || isNaN(parseFloat(targetAttr))) {
+                        // Si le texte est "NaN", le remplacer par "7/7"
+                        if (stat.textContent === 'NaN' || stat.textContent === '0') {
+                            stat.textContent = '7/7';
+                        }
+                        return;
+                    }
+
+                    const target = parseFloat(targetAttr);
                     const isDecimal = target % 1 !== 0;
                     const duration = 2000;
                     const increment = target / (duration / 16);
                     let current = 0;
-                    
+
                     const updateNumber = () => {
                         current += increment;
                         if (current < target) {
@@ -565,7 +576,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             stat.textContent = isDecimal ? target.toFixed(1) : target;
                         }
                     };
-                    
+
                     updateNumber();
                 });
             }
