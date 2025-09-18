@@ -3187,6 +3187,28 @@ video.hero-video {
         top: -9999px !important;
         left: -9999px !important;
     }
+
+    /* Process section - Version ultra élargie pour petits écrans */
+    .process-section .container {
+        padding: 0 5px;
+    }
+
+    .process-timeline {
+        padding: 0 5px;
+    }
+
+    .process-step {
+        margin-bottom: 30px;
+    }
+
+    .process-step .step-content {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .step-content h3 {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -3446,9 +3468,19 @@ video.hero-video {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    /* Process timeline */
+    /* Process timeline - Version élargie pour mobile */
     .process-timeline {
-        padding: 0 20px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    .process-section .container {
+        padding: 0 10px;
+    }
+
+    .process-step .step-content {
+        padding: 15px;
+        max-width: 100%;
     }
     
     /* FAQ */
