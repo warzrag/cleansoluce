@@ -3209,6 +3209,12 @@ video.hero-video {
     .step-content h3 {
         font-size: 1.1rem;
     }
+
+    /* About section - Encore moins d'espace sur petits mobiles */
+    .about-section {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
 }
 
 
@@ -3481,6 +3487,12 @@ video.hero-video {
     .process-step .step-content {
         padding: 15px;
         max-width: 100%;
+    }
+
+    /* About section - Réduire l'espace au-dessus sur mobile */
+    .about-section {
+        margin-top: 40px;
+        padding-top: 40px;
     }
     
     /* FAQ */
