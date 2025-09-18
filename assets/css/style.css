@@ -2527,15 +2527,19 @@ video.hero-video {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .testimonial-card {
     background: white;
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     position: relative;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 /* Badge Google sur les cartes */
@@ -3215,6 +3219,74 @@ video.hero-video {
         margin-top: 20px;
         padding-top: 20px;
     }
+
+    /* Testimonials - Version ultra thin pour très petits mobiles */
+    .testimonials-section {
+        padding: 30px 0;
+    }
+
+    .testimonials-section .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .testimonials-section .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonials-grid {
+        padding: 0 5px;
+        gap: 0.75rem;
+    }
+
+    .testimonial-card {
+        padding: 0.75rem;
+        border-left: 3px solid var(--primary-color);
+        border-radius: 4px;
+        background: #fafafa;
+    }
+
+    .google-review-badge {
+        display: none; /* Masquer sur très petit écran pour gagner de l'espace */
+    }
+
+    .testimonial-content {
+        margin-bottom: 0.75rem;
+    }
+
+    .testimonial-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    .owner-response {
+        display: none; /* Masquer les réponses sur très petit écran */
+    }
+
+    .testimonials-stats {
+        margin-top: 1rem;
+        padding: 0 10px;
+    }
+
+    .testimonials-stats .stat-item {
+        padding: 0.5rem;
+    }
+
+    .testimonials-stats .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .testimonials-stats .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .testimonials-google-link,
+    .google-reviews-link {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
 }
 
 
@@ -3493,6 +3565,84 @@ video.hero-video {
     .about-section {
         margin-top: 40px;
         padding-top: 40px;
+    }
+
+    /* Testimonials - Version mobile ultra épurée */
+    .testimonials-section {
+        padding: 40px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        border-radius: 8px;
+    }
+
+    .testimonial-card:hover {
+        transform: none;
+    }
+
+    .google-review-badge {
+        position: static;
+        margin-bottom: 10px;
+        display: inline-flex;
+        padding: 4px 8px;
+    }
+
+    .google-review-badge span {
+        font-size: 0.75rem;
+    }
+
+    .testimonial-rating {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .testimonial-rating i {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .testimonial-author {
+        gap: 0.5rem;
+    }
+
+    .avatar-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .author-info h4 {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+
+    .author-meta {
+        font-size: 0.75rem;
+        gap: 8px;
+    }
+
+    .testimonial-date {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    .owner-response {
+        margin-top: 0.75rem;
+        padding: 0.5rem;
+        font-size: 0.85rem;
     }
     
     /* FAQ */
