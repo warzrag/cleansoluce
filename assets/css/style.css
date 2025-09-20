@@ -2958,8 +2958,16 @@ video.hero-video {
     }
     
     .testimonials-stats {
-        flex-direction: column;
-        gap: 2rem;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .testimonials-stats .stat-item {
+        flex: 1;
+        min-width: 80px;
+        text-align: center;
     }
     
     .team-grid {
@@ -3267,19 +3275,25 @@ video.hero-video {
 
     .testimonials-stats {
         margin-top: 1rem;
-        padding: 0 10px;
+        padding: 0.75rem 5px;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: space-around;
     }
 
     .testimonials-stats .stat-item {
-        padding: 0.5rem;
+        padding: 0.25rem;
+        flex: 1;
+        min-width: 70px;
     }
 
     .testimonials-stats .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .testimonials-stats .stat-label {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        line-height: 1.2;
     }
 
     .testimonials-google-link,
